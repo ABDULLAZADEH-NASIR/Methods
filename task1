@@ -1,0 +1,22 @@
+1. Ededin üstünü tapan bir  "power" metodu yazın, metod number ve power parametrleri alib ona uygun ededin ustunu geri qaytarmalidir
+
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Eded daxil edin: ");
+        int eded = scanner.nextInt();
+        System.out.println("Quvvet daxil edin: ");
+        int quvvet = scanner.nextInt();
+        int deyer = ededinQuvvetinTapilmasi(eded, quvvet);
+        System.out.println("Cavab: " + deyer);
+
+    }
+
+    public static int ededinQuvvetinTapilmasi(int eded, int quvvet) {
+          int deyer=1;
+        for(int i=0;i<quvvet;i++) {
+            deyer= deyer*eded;
+        }
+        return deyer;
+    }
+}
